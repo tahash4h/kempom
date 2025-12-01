@@ -31,6 +31,9 @@ jobs:
             any::tibble
             any::dplyr
 
+      - name: Ensure data folder exists
+        run: mkdir -p data
+
       - name: Run KenPom processing script
         run: Rscript get_bball_points.R
 
