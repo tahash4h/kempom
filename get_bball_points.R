@@ -1,3 +1,13 @@
+#get_bball_points.R
+
+library(tidyverse)
+library(httr)
+library(jsonlite)
+library(readr)
+library(zoo)
+library(ggplot2)
+library(lubridate)
+
 src <- "https://kenpom.com/cbbga26.txt"
 lines <- read_lines(src)
 
